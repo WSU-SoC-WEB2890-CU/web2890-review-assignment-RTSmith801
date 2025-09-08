@@ -1,1 +1,25 @@
 TODO: List here all the changes you made to given template to adapt it to your needs
+
+Changed primary and secondary colors to:
+$purple-dark:    #3d0d50;
+$purple-light:  #c920c9;
+
+Changed lorem ipsum to custom text
+
+Changed logo and art images
+
+Changed section divides (wavy parts)
+
+Used custom images in projects section
+
+New section added - Pricing
+
+New section added - Custom Jumbotron
+
+Added new sections and set up in-page links for navbar
+
+Added external links for projects
+
+Additional background colors and section divides
+
+

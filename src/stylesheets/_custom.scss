@@ -1,11 +1,14 @@
 // THEME COLORS 
 $teal-dark:    #0d503c;
 $teal-light:  #20c997;
+$purple-dark:    #3d0d50;
+$purple-light:  #c920c9;
 $orange: #fd7e14;
+$pear: #E6F14A;
 $footer: #151414;
 
-$primary: $teal-dark;
-$secondary: $teal-light;
+$primary: $purple-dark;
+$secondary: $purple-light;
 
 // ACCORDION OVERRIDES
 $accordion-padding-y: 1.5rem;
@@ -14,6 +17,19 @@ $accordion-icon-color: $primary;
 $accordion-icon-active-color: $secondary;
 $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/> <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>  <path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+
+#logo-image{
+     max-width: 86px;
+}
+
+#pricing, #jumbotron {
+     background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
+
+#portfolio a {
+     background-color: $pear;
+}
+
 
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.scss"
