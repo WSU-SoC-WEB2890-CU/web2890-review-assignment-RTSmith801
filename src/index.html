@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="images/logo.png" alt="logo image">
+        <img src="images/alt-logo.png" alt="logo image" id="logo-image">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +27,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Buy Stuff</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Faq</a></li>
+          <li class="nav-item"><a class="nav-link" href="#jumbotron">Jumbotron</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         <button type="button" class="rounded-pill btn-rounded">
@@ -50,9 +52,9 @@
       <div class="row align-items-center text-white">
         <div class="col-md-6 intros text-start">
           <h1 class="display-2">
-            <span class="display-2--intro">Welcome!</span>
+            <span class="display-2--intro">Hello There!</span>
             <span class="display-2--description lh-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur libero quod quasi et ex.
+              I am a student enrolled in Web 2890 at Weber State University during the Fall 2025 semester!
             </span>
           </h1>
           <button type="button" class="rounded-pill btn-rounded">Get in Touch
@@ -61,7 +63,7 @@
         </div>
         <div class="col-md-6 intros text-end">
           <div class="video-box">
-            <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
+            <img src="images/arts/alt-intro.png" alt="video illutration" class="img-fluid">
             <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
               <span>
                 <i class="bi bi-play-circle"></i>
@@ -75,7 +77,7 @@
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ffffff" fill-opacity="1"
-        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        d="M0,256L6.3,256C12.6,256,25,256,38,234.7C50.5,213,63,171,76,181.3C88.4,192,101,256,114,234.7C126.3,213,139,107,152,53.3C164.2,0,177,0,189,32C202.1,64,215,128,227,144C240,160,253,128,265,117.3C277.9,107,291,117,303,154.7C315.8,192,328,256,341,240C353.7,224,366,128,379,112C391.6,96,404,160,417,186.7C429.5,213,442,203,455,181.3C467.4,160,480,128,493,101.3C505.3,75,518,53,531,53.3C543.2,53,556,75,568,74.7C581.1,75,594,53,606,80C618.9,107,632,181,644,208C656.8,235,669,213,682,186.7C694.7,160,707,128,720,112C732.6,96,745,96,758,106.7C770.5,117,783,139,796,133.3C808.4,128,821,96,834,69.3C846.3,43,859,21,872,64C884.2,107,897,213,909,261.3C922.1,309,935,299,947,250.7C960,203,973,117,985,90.7C997.9,64,1011,96,1023,138.7C1035.8,181,1048,235,1061,250.7C1073.7,267,1086,245,1099,213.3C1111.6,181,1124,139,1137,117.3C1149.5,96,1162,96,1175,80C1187.4,64,1200,32,1213,58.7C1225.3,85,1238,171,1251,218.7C1263.2,267,1276,277,1288,277.3C1301.1,277,1314,267,1326,229.3C1338.9,192,1352,128,1364,128C1376.8,128,1389,192,1402,197.3C1414.7,203,1427,149,1434,122.7L1440,96L1440,320L1433.7,320C1427.4,320,1415,320,1402,320C1389.5,320,1377,320,1364,320C1351.6,320,1339,320,1326,320C1313.7,320,1301,320,1288,320C1275.8,320,1263,320,1251,320C1237.9,320,1225,320,1213,320C1200,320,1187,320,1175,320C1162.1,320,1149,320,1137,320C1124.2,320,1112,320,1099,320C1086.3,320,1074,320,1061,320C1048.4,320,1036,320,1023,320C1010.5,320,998,320,985,320C972.6,320,960,320,947,320C934.7,320,922,320,909,320C896.8,320,884,320,872,320C858.9,320,846,320,834,320C821.1,320,808,320,796,320C783.2,320,771,320,758,320C745.3,320,733,320,720,320C707.4,320,695,320,682,320C669.5,320,657,320,644,320C631.6,320,619,320,606,320C593.7,320,581,320,568,320C555.8,320,543,320,531,320C517.9,320,505,320,493,320C480,320,467,320,455,320C442.1,320,429,320,417,320C404.2,320,392,320,379,320C366.3,320,354,320,341,320C328.4,320,316,320,303,320C290.5,320,278,320,265,320C252.6,320,240,320,227,320C214.7,320,202,320,189,320C176.8,320,164,320,152,320C138.9,320,126,320,114,320C101.1,320,88,320,76,320C63.2,320,51,320,38,320C25.3,320,13,320,6,320L0,320Z">
       </path>
     </svg>
   </section>
@@ -91,14 +93,16 @@
         <div class="col-md-6 border-right">
           <div class="bg-white p-3">
             <h2 class="fw-bold text-capitalize text-center">
-              Soluta exercitationem voluptatem labore cum necessitatibus temporibus nisi.
+              I have learned how to customize websites using both Bootstrap and Sass.
             </h2>
           </div>
         </div>
         <div class="col-md-6">
           <div class="bg-white p-4 text-start">
             <p class="fw-light">
-              Hello
+              I began studying web design using <a href="https://www.freecodecamp.org/"
+                target="_blank">freecodecamp.org</a> and am now near completing my Bachelor's Degree in Computer
+              Science!
             </p>
           </div>
         </div>
@@ -107,70 +111,150 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12  services mt-4">
           <div class="services__content">
             <div class="icon d-block bi bi-send-fill"></div>
             <h3 class="display-3--title mt-1">Marketing</h3>
             <p class="lh-lg">
-              Welcome to my website. This is new.
+              While I don't have much of a social media presence, I've met some wonderful friends and clients at local
+              marketing events and through word of mouth.
             </p>
-            <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <button type="button" class="rounded-pill btn-rounded border-primary w-100 w-md-auto">Learn more
               <span><i class="bi bi-arrow-right"></i></span>
             </button>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+        <div class="col-lg-6 col-md-6 col-sm-12  services mt-4 text-end">
           <div class="services__pic">
-            <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid">
+            <img src="images/services/custom03.png" alt="marketing illustration" class="img-fluid">
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+        <div class="col-lg-6 col-md-6 col-sm-12  services mt-4 text-start">
           <div class="services__pic">
-            <img src="images/services/service-2.png" alt="web development illustration" class="img-fluid">
+            <img src="images/services/custom02.png" alt="web development illustration" class="img-fluid">
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12  services mt-4">
           <div class="services__content">
             <div class="icon d-block bi bi-code-slash"></div>
             <h3 class="display-3--title mt-1">web development</h3>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-              doloremque autem quibusdam blanditiis harum alias hic accusantium
-              maxime atque ratione magni repellat?
+              I have created and maintained several websites for small local businesses.
             </p>
-            <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <button type="button" class="rounded-pill btn-rounded border-primary w-100 w-md-auto">Learn more
               <span><i class="bi bi-arrow-right"></i></span>
             </button>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12  services mt-4">
           <div class="services__content">
             <div class="icon d-block bi bi-cloud-arrow-up"></div>
-            <h3 class="display-3--title mt-1">cloud hosting</h3>
+            <h3 class="display-3--title mt-1">Game Development</h3>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-              doloremque autem quibusdam blanditiis harum alias hic accusantium
-              maxime atque ratione magni repellat?
+              As a hobby, I enjoy developing video games. Most of my experience is in Unity, and I am currently
+              tinkering with projects in Unreal Engine.
             </p>
-            <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+            <button type="button" class="rounded-pill btn-rounded border-primary w-100 w-md-auto">Learn more
               <span><i class="bi bi-arrow-right"></i></span>
             </button>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+        <div class="col-lg-6 col-md-6 col-sm-12  services mt-4 text-end">
           <div class="services__pic">
-            <img src="images/services/service-3.png" alt="cloud hosting illustration" class="img-fluid">
+            <img src="images/services/custom01.png" alt="cloud hosting illustration" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- THE CAMPANIES SECTION -->
+  <!-- PRICING SECTION -->
+  <section id="pricing">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,256L6.3,256C12.6,256,25,256,38,234.7C50.5,213,63,171,76,181.3C88.4,192,101,256,114,234.7C126.3,213,139,107,152,53.3C164.2,0,177,0,189,32C202.1,64,215,128,227,144C240,160,253,128,265,117.3C277.9,107,291,117,303,154.7C315.8,192,328,256,341,240C353.7,224,366,128,379,112C391.6,96,404,160,417,186.7C429.5,213,442,203,455,181.3C467.4,160,480,128,493,101.3C505.3,75,518,53,531,53.3C543.2,53,556,75,568,74.7C581.1,75,594,53,606,80C618.9,107,632,181,644,208C656.8,235,669,213,682,186.7C694.7,160,707,128,720,112C732.6,96,745,96,758,106.7C770.5,117,783,139,796,133.3C808.4,128,821,96,834,69.3C846.3,43,859,21,872,64C884.2,107,897,213,909,261.3C922.1,309,935,299,947,250.7C960,203,973,117,985,90.7C997.9,64,1011,96,1023,138.7C1035.8,181,1048,235,1061,250.7C1073.7,267,1086,245,1099,213.3C1111.6,181,1124,139,1137,117.3C1149.5,96,1162,96,1175,80C1187.4,64,1200,32,1213,58.7C1225.3,85,1238,171,1251,218.7C1263.2,267,1276,277,1288,277.3C1301.1,277,1314,267,1326,229.3C1338.9,192,1352,128,1364,128C1376.8,128,1389,192,1402,197.3C1414.7,203,1427,149,1434,122.7L1440,96L1440,0L1433.7,0C1427.4,0,1415,0,1402,0C1389.5,0,1377,0,1364,0C1351.6,0,1339,0,1326,0C1313.7,0,1301,0,1288,0C1275.8,0,1263,0,1251,0C1237.9,0,1225,0,1213,0C1200,0,1187,0,1175,0C1162.1,0,1149,0,1137,0C1124.2,0,1112,0,1099,0C1086.3,0,1074,0,1061,0C1048.4,0,1036,0,1023,0C1010.5,0,998,0,985,0C972.6,0,960,0,947,0C934.7,0,922,0,909,0C896.8,0,884,0,872,0C858.9,0,846,0,834,0C821.1,0,808,0,796,0C783.2,0,771,0,758,0C745.3,0,733,0,720,0C707.4,0,695,0,682,0C669.5,0,657,0,644,0C631.6,0,619,0,606,0C593.7,0,581,0,568,0C555.8,0,543,0,531,0C517.9,0,505,0,493,0C480,0,467,0,455,0C442.1,0,429,0,417,0C404.2,0,392,0,379,0C366.3,0,354,0,341,0C328.4,0,316,0,303,0C290.5,0,278,0,265,0C252.6,0,240,0,227,0C214.7,0,202,0,189,0C176.8,0,164,0,152,0C138.9,0,126,0,114,0C101.1,0,88,0,76,0C63.2,0,51,0,38,0C25.3,0,13,0,6,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <h1 class="display-3 fw-bold text-capitalize text-center">Buy Stuff</h1>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Play my Games</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $0
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>All online games included</li>
+                <li>Available on most browsers</li>
+                <li>Priority email support</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                Play for free
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Host a Website</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $50<small class="text-body-secondary fw-light">/year</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Priority email support</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Build a Website</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $500
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+
+                <li>1 Landing Page Included</li>
+                <li>1st Year of Hosting Included</li>
+                <li>Priority email support</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,256L6.3,256C12.6,256,25,256,38,234.7C50.5,213,63,171,76,181.3C88.4,192,101,256,114,234.7C126.3,213,139,107,152,53.3C164.2,0,177,0,189,32C202.1,64,215,128,227,144C240,160,253,128,265,117.3C277.9,107,291,117,303,154.7C315.8,192,328,256,341,240C353.7,224,366,128,379,112C391.6,96,404,160,417,186.7C429.5,213,442,203,455,181.3C467.4,160,480,128,493,101.3C505.3,75,518,53,531,53.3C543.2,53,556,75,568,74.7C581.1,75,594,53,606,80C618.9,107,632,181,644,208C656.8,235,669,213,682,186.7C694.7,160,707,128,720,112C732.6,96,745,96,758,106.7C770.5,117,783,139,796,133.3C808.4,128,821,96,834,69.3C846.3,43,859,21,872,64C884.2,107,897,213,909,261.3C922.1,309,935,299,947,250.7C960,203,973,117,985,90.7C997.9,64,1011,96,1023,138.7C1035.8,181,1048,235,1061,250.7C1073.7,267,1086,245,1099,213.3C1111.6,181,1124,139,1137,117.3C1149.5,96,1162,96,1175,80C1187.4,64,1200,32,1213,58.7C1225.3,85,1238,171,1251,218.7C1263.2,267,1276,277,1288,277.3C1301.1,277,1314,267,1326,229.3C1338.9,192,1352,128,1364,128C1376.8,128,1389,192,1402,197.3C1414.7,203,1427,149,1434,122.7L1440,96L1440,320L1433.7,320C1427.4,320,1415,320,1402,320C1389.5,320,1377,320,1364,320C1351.6,320,1339,320,1326,320C1313.7,320,1301,320,1288,320C1275.8,320,1263,320,1251,320C1237.9,320,1225,320,1213,320C1200,320,1187,320,1175,320C1162.1,320,1149,320,1137,320C1124.2,320,1112,320,1099,320C1086.3,320,1074,320,1061,320C1048.4,320,1036,320,1023,320C1010.5,320,998,320,985,320C972.6,320,960,320,947,320C934.7,320,922,320,909,320C896.8,320,884,320,872,320C858.9,320,846,320,834,320C821.1,320,808,320,796,320C783.2,320,771,320,758,320C745.3,320,733,320,720,320C707.4,320,695,320,682,320C669.5,320,657,320,644,320C631.6,320,619,320,606,320C593.7,320,581,320,568,320C555.8,320,543,320,531,320C517.9,320,505,320,493,320C480,320,467,320,455,320C442.1,320,429,320,417,320C404.2,320,392,320,379,320C366.3,320,354,320,341,320C328.4,320,316,320,303,320C290.5,320,278,320,265,320C252.6,320,240,320,227,320C214.7,320,202,320,189,320C176.8,320,164,320,152,320C138.9,320,126,320,114,320C101.1,320,88,320,76,320C63.2,320,51,320,38,320C25.3,320,13,320,6,320L0,320Z">
+      </path>
+    </svg>
+
+  </section>
+
+
+  <!-- THE COMPANIES SECTION -->
   <section id="companies" class="companies">
     <div class="container">
       <div class="row text-center">
@@ -218,7 +302,7 @@
   <section id="testimonials" class="testimonials">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#fff" fill-opacity="1"
-        d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        d="M0,256L6.3,256C12.6,256,25,256,38,234.7C50.5,213,63,171,76,181.3C88.4,192,101,256,114,234.7C126.3,213,139,107,152,53.3C164.2,0,177,0,189,32C202.1,64,215,128,227,144C240,160,253,128,265,117.3C277.9,107,291,117,303,154.7C315.8,192,328,256,341,240C353.7,224,366,128,379,112C391.6,96,404,160,417,186.7C429.5,213,442,203,455,181.3C467.4,160,480,128,493,101.3C505.3,75,518,53,531,53.3C543.2,53,556,75,568,74.7C581.1,75,594,53,606,80C618.9,107,632,181,644,208C656.8,235,669,213,682,186.7C694.7,160,707,128,720,112C732.6,96,745,96,758,106.7C770.5,117,783,139,796,133.3C808.4,128,821,96,834,69.3C846.3,43,859,21,872,64C884.2,107,897,213,909,261.3C922.1,309,935,299,947,250.7C960,203,973,117,985,90.7C997.9,64,1011,96,1023,138.7C1035.8,181,1048,235,1061,250.7C1073.7,267,1086,245,1099,213.3C1111.6,181,1124,139,1137,117.3C1149.5,96,1162,96,1175,80C1187.4,64,1200,32,1213,58.7C1225.3,85,1238,171,1251,218.7C1263.2,267,1276,277,1288,277.3C1301.1,277,1314,267,1326,229.3C1338.9,192,1352,128,1364,128C1376.8,128,1389,192,1402,197.3C1414.7,203,1427,149,1434,122.7L1440,96L1440,0L1433.7,0C1427.4,0,1415,0,1402,0C1389.5,0,1377,0,1364,0C1351.6,0,1339,0,1326,0C1313.7,0,1301,0,1288,0C1275.8,0,1263,0,1251,0C1237.9,0,1225,0,1213,0C1200,0,1187,0,1175,0C1162.1,0,1149,0,1137,0C1124.2,0,1112,0,1099,0C1086.3,0,1074,0,1061,0C1048.4,0,1036,0,1023,0C1010.5,0,998,0,985,0C972.6,0,960,0,947,0C934.7,0,922,0,909,0C896.8,0,884,0,872,0C858.9,0,846,0,834,0C821.1,0,808,0,796,0C783.2,0,771,0,758,0C745.3,0,733,0,720,0C707.4,0,695,0,682,0C669.5,0,657,0,644,0C631.6,0,619,0,606,0C593.7,0,581,0,568,0C555.8,0,543,0,531,0C517.9,0,505,0,493,0C480,0,467,0,455,0C442.1,0,429,0,417,0C404.2,0,392,0,379,0C366.3,0,354,0,341,0C328.4,0,316,0,303,0C290.5,0,278,0,265,0C252.6,0,240,0,227,0C214.7,0,202,0,189,0C176.8,0,164,0,152,0C138.9,0,126,0,114,0C101.1,0,88,0,76,0C63.2,0,51,0,38,0C25.3,0,13,0,6,0L0,0Z">
       </path>
     </svg>
     <div class="container">
@@ -235,9 +319,7 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
+                  Rick is super cool!
                   <i class="bi bi-blockquote-right"></i>
                 <div class="ratings p-1">
                   <i class="bi bi-star"></i>
@@ -260,9 +342,7 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
+                  What a creative and hardworking indivdual!
                   <i class="bi bi-blockquote-right"></i>
                 <div class="ratings p-1">
                   <i class="bi bi-star"></i>
@@ -285,9 +365,7 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
+                  Some people just exude excellence, and Rick is one of them!
                   <i class="bi bi-blockquote-right"></i>
                 <div class="ratings p-1">
                   <i class="bi bi-star"></i>
@@ -310,9 +388,7 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
+                  In a rating out of 0-5 stars, I'd give Rick 7 stars!
                   <i class="bi bi-blockquote-right"></i>
                 <div class="ratings p-1">
                   <i class="bi bi-star"></i>
@@ -345,7 +421,7 @@
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#fff" fill-opacity="1"
-        d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        d="M0,256L6.3,256C12.6,256,25,256,38,234.7C50.5,213,63,171,76,181.3C88.4,192,101,256,114,234.7C126.3,213,139,107,152,53.3C164.2,0,177,0,189,32C202.1,64,215,128,227,144C240,160,253,128,265,117.3C277.9,107,291,117,303,154.7C315.8,192,328,256,341,240C353.7,224,366,128,379,112C391.6,96,404,160,417,186.7C429.5,213,442,203,455,181.3C467.4,160,480,128,493,101.3C505.3,75,518,53,531,53.3C543.2,53,556,75,568,74.7C581.1,75,594,53,606,80C618.9,107,632,181,644,208C656.8,235,669,213,682,186.7C694.7,160,707,128,720,112C732.6,96,745,96,758,106.7C770.5,117,783,139,796,133.3C808.4,128,821,96,834,69.3C846.3,43,859,21,872,64C884.2,107,897,213,909,261.3C922.1,309,935,299,947,250.7C960,203,973,117,985,90.7C997.9,64,1011,96,1023,138.7C1035.8,181,1048,235,1061,250.7C1073.7,267,1086,245,1099,213.3C1111.6,181,1124,139,1137,117.3C1149.5,96,1162,96,1175,80C1187.4,64,1200,32,1213,58.7C1225.3,85,1238,171,1251,218.7C1263.2,267,1276,277,1288,277.3C1301.1,277,1314,267,1326,229.3C1338.9,192,1352,128,1364,128C1376.8,128,1389,192,1402,197.3C1414.7,203,1427,149,1434,122.7L1440,96L1440,320L1433.7,320C1427.4,320,1415,320,1402,320C1389.5,320,1377,320,1364,320C1351.6,320,1339,320,1326,320C1313.7,320,1301,320,1288,320C1275.8,320,1263,320,1251,320C1237.9,320,1225,320,1213,320C1200,320,1187,320,1175,320C1162.1,320,1149,320,1137,320C1124.2,320,1112,320,1099,320C1086.3,320,1074,320,1061,320C1048.4,320,1036,320,1023,320C1010.5,320,998,320,985,320C972.6,320,960,320,947,320C934.7,320,922,320,909,320C896.8,320,884,320,872,320C858.9,320,846,320,834,320C821.1,320,808,320,796,320C783.2,320,771,320,758,320C745.3,320,733,320,720,320C707.4,320,695,320,682,320C669.5,320,657,320,644,320C631.6,320,619,320,606,320C593.7,320,581,320,568,320C555.8,320,543,320,531,320C517.9,320,505,320,493,320C480,320,467,320,455,320C442.1,320,429,320,417,320C404.2,320,392,320,379,320C366.3,320,354,320,341,320C328.4,320,316,320,303,320C290.5,320,278,320,265,320C252.6,320,240,320,227,320C214.7,320,202,320,189,320C176.8,320,164,320,152,320C138.9,320,126,320,114,320C101.1,320,88,320,76,320C63.2,320,51,320,38,320C25.3,320,13,320,6,320L0,320Z">
       </path>
     </svg>
   </section>
@@ -365,13 +441,13 @@
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
-                  Cum facilis quis quia modi ipsam unde fuga animi?
+                  When are you set to graduate?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, et adipisci, suscipit doloremque dicta necessitatibus esse ea minus, aut officia nulla harum asperiores quis dolor aliquid a ut est soluta?
+                  I am currently on track to graduate by Fall 2026.
                 </div>
               </div>
             </div>
@@ -379,13 +455,14 @@
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                  Can I play any of the video games you've created online?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos excepturi amet nesciunt sunt recusandae enim! Repellat nam quo unde eligendi, ex cumque illum deserunt ratione rerum perspiciatis voluptatum voluptas.
+                  Yes! I've hosted some of the games and projects I've worked on at: <a
+                    href="https://planeteightgames.itch.io/" target="_blank">planeteightgames.itch.io</a>
                 </div>
               </div>
             </div>
@@ -393,13 +470,13 @@
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Quaerat dolorem, eveniet hic natus iste velit?
+                  What do you like to do with your free time?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, perspiciatis ea eius laborum iste, fugiat molestias magni tenetur quidem assumenda quibusdam dignissimos vitae impedit maiores velit quae aspernatur voluptatibus aperiam.
+                  I enjoy playing sports, boardgames, and attending live music.
                 </div>
               </div>
             </div>
@@ -407,13 +484,13 @@
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Fuga quasi voluptate possimus, eum ex iure sit placeat?
+                  Are you availalbe to build a website for me?
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas officia consequuntur sapiente quis. Perferendis excepturi magnam autem blanditiis? At fugit, mollitia quo consequatur deserunt provident aspernatur. Provident, id corporis.
+                  Yes! I am always on the lookout for opportunities to help small businesses grow!
                 </div>
               </div>
             </div>
@@ -423,14 +500,49 @@
     </div>
   </section>
 
+
+
+  <!-- JUMBOTRON SECTION -->
+
+  <section id="jumbotron" class="jumbotron">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,256L6.3,256C12.6,256,25,256,38,234.7C50.5,213,63,171,76,181.3C88.4,192,101,256,114,234.7C126.3,213,139,107,152,53.3C164.2,0,177,0,189,32C202.1,64,215,128,227,144C240,160,253,128,265,117.3C277.9,107,291,117,303,154.7C315.8,192,328,256,341,240C353.7,224,366,128,379,112C391.6,96,404,160,417,186.7C429.5,213,442,203,455,181.3C467.4,160,480,128,493,101.3C505.3,75,518,53,531,53.3C543.2,53,556,75,568,74.7C581.1,75,594,53,606,80C618.9,107,632,181,644,208C656.8,235,669,213,682,186.7C694.7,160,707,128,720,112C732.6,96,745,96,758,106.7C770.5,117,783,139,796,133.3C808.4,128,821,96,834,69.3C846.3,43,859,21,872,64C884.2,107,897,213,909,261.3C922.1,309,935,299,947,250.7C960,203,973,117,985,90.7C997.9,64,1011,96,1023,138.7C1035.8,181,1048,235,1061,250.7C1073.7,267,1086,245,1099,213.3C1111.6,181,1124,139,1137,117.3C1149.5,96,1162,96,1175,80C1187.4,64,1200,32,1213,58.7C1225.3,85,1238,171,1251,218.7C1263.2,267,1276,277,1288,277.3C1301.1,277,1314,267,1326,229.3C1338.9,192,1352,128,1364,128C1376.8,128,1389,192,1402,197.3C1414.7,203,1427,149,1434,122.7L1440,96L1440,0L1433.7,0C1427.4,0,1415,0,1402,0C1389.5,0,1377,0,1364,0C1351.6,0,1339,0,1326,0C1313.7,0,1301,0,1288,0C1275.8,0,1263,0,1251,0C1237.9,0,1225,0,1213,0C1200,0,1187,0,1175,0C1162.1,0,1149,0,1137,0C1124.2,0,1112,0,1099,0C1086.3,0,1074,0,1061,0C1048.4,0,1036,0,1023,0C1010.5,0,998,0,985,0C972.6,0,960,0,947,0C934.7,0,922,0,909,0C896.8,0,884,0,872,0C858.9,0,846,0,834,0C821.1,0,808,0,796,0C783.2,0,771,0,758,0C745.3,0,733,0,720,0C707.4,0,695,0,682,0C669.5,0,657,0,644,0C631.6,0,619,0,606,0C593.7,0,581,0,568,0C555.8,0,543,0,531,0C517.9,0,505,0,493,0C480,0,467,0,455,0C442.1,0,429,0,417,0C404.2,0,392,0,379,0C366.3,0,354,0,341,0C328.4,0,316,0,303,0C290.5,0,278,0,265,0C252.6,0,240,0,227,0C214.7,0,202,0,189,0C176.8,0,164,0,152,0C138.9,0,126,0,114,0C101.1,0,88,0,76,0C63.2,0,51,0,38,0C25.3,0,13,0,6,0L0,0Z">
+      </path>
+    </svg>
+
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3 container text-center">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+        <p class="col-md-8 mx-auto fs-4 ">
+          This is a custom jumboton that I created!
+        </p>
+        <button class="btn btn-primary btn-lg" type="button">
+          Push the button!
+        </button>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,256L6.3,256C12.6,256,25,256,38,234.7C50.5,213,63,171,76,181.3C88.4,192,101,256,114,234.7C126.3,213,139,107,152,53.3C164.2,0,177,0,189,32C202.1,64,215,128,227,144C240,160,253,128,265,117.3C277.9,107,291,117,303,154.7C315.8,192,328,256,341,240C353.7,224,366,128,379,112C391.6,96,404,160,417,186.7C429.5,213,442,203,455,181.3C467.4,160,480,128,493,101.3C505.3,75,518,53,531,53.3C543.2,53,556,75,568,74.7C581.1,75,594,53,606,80C618.9,107,632,181,644,208C656.8,235,669,213,682,186.7C694.7,160,707,128,720,112C732.6,96,745,96,758,106.7C770.5,117,783,139,796,133.3C808.4,128,821,96,834,69.3C846.3,43,859,21,872,64C884.2,107,897,213,909,261.3C922.1,309,935,299,947,250.7C960,203,973,117,985,90.7C997.9,64,1011,96,1023,138.7C1035.8,181,1048,235,1061,250.7C1073.7,267,1086,245,1099,213.3C1111.6,181,1124,139,1137,117.3C1149.5,96,1162,96,1175,80C1187.4,64,1200,32,1213,58.7C1225.3,85,1238,171,1251,218.7C1263.2,267,1276,277,1288,277.3C1301.1,277,1314,267,1326,229.3C1338.9,192,1352,128,1364,128C1376.8,128,1389,192,1402,197.3C1414.7,203,1427,149,1434,122.7L1440,96L1440,320L1433.7,320C1427.4,320,1415,320,1402,320C1389.5,320,1377,320,1364,320C1351.6,320,1339,320,1326,320C1313.7,320,1301,320,1288,320C1275.8,320,1263,320,1251,320C1237.9,320,1225,320,1213,320C1200,320,1187,320,1175,320C1162.1,320,1149,320,1137,320C1124.2,320,1112,320,1099,320C1086.3,320,1074,320,1061,320C1048.4,320,1036,320,1023,320C1010.5,320,998,320,985,320C972.6,320,960,320,947,320C934.7,320,922,320,909,320C896.8,320,884,320,872,320C858.9,320,846,320,834,320C821.1,320,808,320,796,320C783.2,320,771,320,758,320C745.3,320,733,320,720,320C707.4,320,695,320,682,320C669.5,320,657,320,644,320C631.6,320,619,320,606,320C593.7,320,581,320,568,320C555.8,320,543,320,531,320C517.9,320,505,320,493,320C480,320,467,320,455,320C442.1,320,429,320,417,320C404.2,320,392,320,379,320C366.3,320,354,320,341,320C328.4,320,316,320,303,320C290.5,320,278,320,265,320C252.6,320,240,320,227,320C214.7,320,202,320,189,320C176.8,320,164,320,152,320C138.9,320,126,320,114,320C101.1,320,88,320,76,320C63.2,320,51,320,38,320C25.3,320,13,320,6,320L0,320Z">
+      </path>
+    </svg>
+
+  </section>
+
+
+
   <!-- THE PORTFOLIO -->
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="row text-center mt-5">
-        <h1 class="display-3 fw-bold text-capitalize">Latest work</h1>
+        <h1 class="display-3 fw-bold text-capitalize">Games I've Built</h1>
         <div class="heading-line"></div>
         <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro temporibus distinctio.
+          Look at these cool projects.
         </p>
       </div>
       <div class="row mt-5 mb-4 g-3 text-center">
@@ -445,108 +557,99 @@
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p01.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 1</h4>
-                <p>category project</p>
+                <h4>Marble Jest Quest</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-2.jpg" alt="portfolio 2 image" title="portfolio 2 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p02.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 2</h4>
-                <p>category project</p>
+                <h4>Harvester Saloon</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-3.jpg" alt="portfolio 3 image" title="portfolio 3 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p03.png" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 3</h4>
-                <p>category project</p>
+                <h4>Centipede Clone</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-4.jpg" alt="portfolio 4 image" title="portfolio 4 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p04.png" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 4</h4>
-                <p>category project</p>
+                <h4>Atomic Commander</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-5.jpg" alt="portfolio 5 image" title="portfolio 5 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p05.png" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 5</h4>
-                <p>category project</p>
+                <h4>RoboLair</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-6.jpg" alt="portfolio 6 image" title="portfolio 6 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p06.png" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 6</h4>
-                <p>category project</p>
+                <h4>Moonwalker Grounded</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-7.jpg" alt="portfolio 7 image" title="portfolio 7 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p07.png" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 7</h4>
-                <p>category project</p>
+                <h4>Eyes on the Prize</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-8.jpg" alt="portfolio 8 image" title="portfolio 8 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p08.png" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 8</h4>
-                <p>category project</p>
+                <h4>The Custodian of ZX-42</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="portfolio-box shadow">
-            <img src="images/portfolio/portfolio-9.jpg" alt="portfolio 9 image" title="portfolio 9 picture"
-              class="img-fluid">
+            <img src="images/portfolio/p09.png" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 9</h4>
-                <p>category project</p>
+                <h4>Skømp</h4>
+                <p><a href="https://planeteightgames.itch.io/">Click here to explore</a></p>
               </div>
             </div>
           </div>
@@ -562,7 +665,7 @@
         <h1 class="display-3 fw-bold text-capitalize">Get started</h1>
         <div class="heading-line"></div>
         <p class="lh-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero illum architecto modi.
+          Are you ready to be satisfied?
         </p>
       </div>
 
@@ -571,8 +674,7 @@
           <div class="cta-info w-100">
             <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam alias optio minima, tempore architecto
-              sint ipsam dolore tempora facere laboriosam corrupti!
+              If you're not satisfied, it wasn't made by me!
             </p>
             <h3 class="display-3--brief">What will be the next step?</h3>
             <ul class="cta-info__list">
@@ -614,7 +716,7 @@
       </div>
     </div>
   </section>
-<!-- THE FOOTER SECTION -->
+  <!-- THE FOOTER SECTION -->
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -646,7 +748,7 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a href="#" class="contact-box__info--title">info@company.com</a>
+            <a href="#" class="contact-box__info--title">rickysmith@mail.weber.edu</a>
             <p class="contact-box__info--subtitle">Online support</p>
           </div>
         </div>
@@ -664,7 +766,7 @@
           </div>
           <div class="contact-box__info">
             <a href="#" class="contact-box__info--title">Salt Lake City, USA</a>
-            <p class="contact-box__info--subtitle">NY 10012, US</p>
+            <p class="contact-box__info--subtitle">UT 84115, US</p>
           </div>
         </div>
       </div>
@@ -687,41 +789,31 @@
     <div class="container mt-5">
       <div class="row text-white justify-content-center mt-3 pb-3">
         <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-          <h5 class="text-capitalize fw-bold">Company name</h5>
+          <h5 class="text-capitalize fw-bold">Pixel Tapestry</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex obcaecati blanditiis reprehenderit ab
-            mollitia voluptatem consectetur?
+            We look forward to hearing from you!
           </p>
         </div>
         <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
           <h5 class="text-capitalize fw-bold">Products</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <ul class="list-inline company-list">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Stuff</a></li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
           <h5 class="text-capitalize fw-bold">useful links</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <ul class="list-inline company-list">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Goes</a></li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
           <h5 class="text-capitalize fw-bold">contact</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <ul class="list-inline company-list">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Here</a></li>
           </ul>
         </div>
       </div>
@@ -732,8 +824,8 @@
         <div class="row text-center text-white">
           <div class="col-12">
             <div class="footer-bottom__copyright">
-              &COPY; Copyright 2022 <a href="#">Company</a> | Created by <a href="http://codewithpatrick.com"
-                target="_blank">Name Goes Here</a>
+              &COPY; Copyright 2025 <a href="#">Pixel Tapestry</a> | Created by <a href="https://pixeltapestry.com/"
+                target="_blank">Rick Smith</a>
             </div>
           </div>
         </div>
